@@ -1,0 +1,21 @@
+[project]
+name = "trial-mutmut"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "shinsuke-mat",email = "shinsuke-mat@users.noreply.github.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mutmut>=3.3.1",
+    "psutil>=7.1.0",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.mutmut]
+paths_to_mutate = [ "src/" ]
+pytest_add_cli_args_test_selection= [ "test/" ]
