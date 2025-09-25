@@ -1,4 +1,9 @@
+# check coverages
 uv run pytest
 uv run pytest --cov
 
-uv run mutmut
+# basic mutmut execution
+uv run mutmut run
+
+# interactive mode
+uv run mutmut browse
