@@ -19,4 +19,4 @@ pythonpath = ["src"]
 [tool.mutmut]
 paths_to_mutate = [ "src/" ]
 pytest_add_cli_args_test_selection= [ "test/" ]
-debug=true  # show all generated mutants and test results
+# debug=true  # show all generated mutants and test results
