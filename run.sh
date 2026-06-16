@@ -1,5 +1,10 @@
-# check coverages
+# resolve dependencies
+uv sync
+
+# run test
 uv run pytest
+
+# check coverages
 uv run pytest --cov
 
 # basic mutmut execution
