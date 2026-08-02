@@ -7,13 +7,8 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "mutmut>=3.3.1",
-    "psutil>=7.1.0",
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
+    "pytest-cov>=7.1.0",
 ]
-
-
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
@@ -21,5 +16,11 @@ norecursedirs = ["mutants"]
 
 [tool.mutmut]
 paths_to_mutate = [ "src/" ]
-pytest_add_cli_args_test_selection= [ "test/" ]
+pytest_add_cli_args_test_selection= [ "tests/" ]
+
+[dependency-groups]
+dev = [
+    "mutmut>=3.6.0",
+    "pytest>=9.1.0",
+]
 # debug=true  # show all generated mutants and test results

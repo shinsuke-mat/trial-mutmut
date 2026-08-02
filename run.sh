@@ -5,7 +5,7 @@ uv sync
 uv run pytest
 
 # check coverages
-uv run pytest --cov
+uv run pytest --cov=src
 
 # basic mutmut execution
 uv run mutmut run
